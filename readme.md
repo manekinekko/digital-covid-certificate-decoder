@@ -18,7 +18,7 @@ If you want to try this yourself:
 5. Run `npm start`
 6. The decoded data should be printed:
 
-```json
+```
 Map(4) {
   1 => 'CNAM',
   4 => 1600000000,
