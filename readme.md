@@ -6,7 +6,7 @@ An attempt to decode the Digital Covid Certificate (signed by the french app Tou
 ## How to use
 
 If you want to try this yourself:
-> In order to run this code, you will need [Node.js and NPM](https://nodejs.org/en/download/).
+> In order to run this code, you will need [Node.js 16+ and NPM](https://nodejs.org/en/download/).
 
 1. Use a scanner app on your phone to scan your **OWN** 2D-QR code
 2. Copy the **2D-QR code** from the scanner app. It should look like this: `HC1:6BFO...`
