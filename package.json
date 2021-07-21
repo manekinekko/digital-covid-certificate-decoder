@@ -1,0 +1,30 @@
+{
+  "name": "digital-covid-certificate-decoder",
+  "version": "1.0.0",
+  "description": "An attempt to decode the Digital Covid Certificate (signed by the french app TousAntiCovid) - For Educational Purposes Only",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "covid",
+    "covid-qr",
+    "certificate",
+    "tousanticovid",
+    "cobr",
+    "cose"
+  ],
+  "type": "module",
+  "author": "Wassim Chegham <github@wassim.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@fidm/asn1": "^1.0.4",
+    "@fidm/x509": "^1.2.1",
+    "base45": "^3.0.0",
+    "base45-js": "^1.0.2",
+    "cbor": "^7.0.6",
+    "cose-js": "^0.6.0",
+    "pako": "^2.0.3",
+    "sha256-uint8array": "^0.10.1"
+  }
+}
