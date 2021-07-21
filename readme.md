@@ -16,6 +16,37 @@ If you want to try this yourself:
    ```
 4. Run `npm install`
 5. Run `npm start`
+6. The decoded data should be printed:
+
+```json
+Map(4) {
+  1 => 'CNAM',
+  4 => 1600000000,
+  6 => 1600000000,
+  -260 => Map(1) {
+    1 => {
+      v: [
+        {
+          ci: 'urn:uvci:01:FR:XXXXXXXXXXXX#Y',
+          co: 'FR',
+          dn: 2,
+          dt: '2021-XX-XX',
+          is: 'CNAM',
+          ma: 'ORG-10003XXXX',
+          mp: 'EU/1/XX/XXXX',
+          sd: 2,
+          tg: '840539XXX',
+          vp: 'J0XXXXX'
+        },
+        [length]: 1
+      ],
+      dob: 'XXXX-05-03',
+      nam: { fn: 'CHEGHAM', gn: 'WASSIM', fnt: 'CHEGHAM', gnt: 'WASSIM' },
+      ver: '1.3.0'
+    }
+  }
+}
+```
 
 ## Disclaimers
 
