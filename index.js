@@ -32,10 +32,10 @@ if (data.startsWith("HC1")) {
   if (data.startsWith(":")) {
     data = data.substring(1);
   } else {
-    console.warnin("Warning: unsafe HC1: header. Expected version: v0.0.4");
+    console.warn("Warning: unsafe HC1: header. Expected version: v0.0.4");
   }
 } else {
-  console.warnin("Warning: no HC1: header. Expected version: v0.0.4");
+  console.warn("Warning: no HC1: header. Expected version: v0.0.4");
 }
 
 data = _decode(data);
