@@ -51,12 +51,18 @@ if (data[0] == 0x78) {
 
 const verifier = { key: { x: keyX, y: keyY, kid: keyID } };
 
-try {
-  const buffer = await sign.verify(data, verifier);
-  const entries = decode(Buffer.from(buffer));
-
-  console.log(util.inspect(entries, true, 10, true));
-} catch (err) {
-  console.error(err.message);
-  console.error(err.stack);
+async function asyncCall() {
+  try {
+    const buffer = await sign.verify(data, verifier);
+    const entries = await decode(Buffer.from(buffer));
+    //const entries = Buffer.decode(buffer);
+  
+    console.log(util.inspect(entries, true, 10, true));
+  } catch (err) {
+    console.error(err.message);
+    console.error(err.stack);
+  }
 }
+
+asyncCall();
+
